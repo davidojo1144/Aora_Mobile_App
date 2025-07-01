@@ -1,14 +1,21 @@
 import { Link } from "expo-router";
-import {Text, View } from "react-native";
+import {Text, View, ScrollView, Image } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 
 
 export default function App () {
     return (
-        <View className="flex-1 items-center justify-center bg-white">
-            <Text className="text-3xl font-pblack">Aora!</Text>
-            <Link href= "/home">Go to home</Link>
-        </View>
+        <SafeAreaView className="bg-primary h-full">
+            <ScrollView contentContainerStyle={{height: "100%"}}>
+                <View className="w-full justify-center items-center
+                h-full px-4">
+                    <Image
+                    
+                    />
+                </View>
+            </ScrollView>
+        </SafeAreaView>
     )
 }
 
