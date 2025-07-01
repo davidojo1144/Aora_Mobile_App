@@ -2,6 +2,7 @@ import { Link } from "expo-router";
 import {Text, View, ScrollView, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import {images} from "../constants"
 
 
 export default function App () {
@@ -11,7 +12,7 @@ export default function App () {
                 <View className="w-full justify-center items-center
                 h-full px-4">
                     <Image
-                    
+                    source={images.logo}
                     />
                 </View>
             </ScrollView>
