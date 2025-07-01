@@ -1,4 +1,3 @@
-import { Link } from "expo-router";
 import {Text, View, ScrollView, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -13,6 +12,8 @@ export default function App () {
                 h-full px-4">
                     <Image
                     source={images.logo}
+                    className="w-[130px] h-[84px]"
+                    resizeMode="contain"
                     />
                 </View>
             </ScrollView>
