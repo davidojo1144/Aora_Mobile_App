@@ -23,7 +23,7 @@ const SignIn = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
-        <View className="w-full justify-center h-full px-4 my-6">
+        <View className="w-full justify-center min-h-[75vh] px-4 my-6">
           <Image
           source={images.logo}
           className="w-[115px] h-[35px]"
@@ -62,7 +62,7 @@ const SignIn = () => {
 
           <View className="justify-center pt-5 flex-row gap-2">
             <Text className="text-lg text-gray-100 font-pregular">
-              Don't have an account
+              Don't have an account ?
             </Text>
 
             <TouchableOpacity>
