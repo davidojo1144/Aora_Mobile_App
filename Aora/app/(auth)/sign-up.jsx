@@ -10,5 +10,3 @@ const SignUp = () => {
 }
 
 export default SignUp
-
-const styles = StyleSheet.create({})
