@@ -51,12 +51,15 @@ export const createUser = async (email, password, userName) => {
             avatar: avatarUrl
         }
     )
+
+    return newUser
   } catch (error) {
     console.error("this is the error: ", error)
     throw new Error(error)
   }
 
 }
+
 
 
 export async function signIn(email, password) {
