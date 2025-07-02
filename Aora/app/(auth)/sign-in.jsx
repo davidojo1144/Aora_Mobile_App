@@ -60,13 +60,13 @@ const SignIn = () => {
           isLoading={isSubmitting}
           />
 
-          <View>
-            <Text>
+          <View className="justify-center pt-5 flex-row gap-2">
+            <Text className="text-lg text-gray-100 font-pregular">
               Don't have an account
             </Text>
 
             <TouchableOpacity>
-              <Link href="/sign-up">Sign Up</Link>
+              <Link className='text-lg font-psemibold text-secondary-100' href="/sign-up">Sign Up</Link>
             </TouchableOpacity>
           </View>
         </View>
