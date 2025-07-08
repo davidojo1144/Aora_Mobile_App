@@ -86,13 +86,24 @@ export async function signIn(email, password) {
     }
 }
 
-// Add logout functionality
-export async function signOut() {
+
+
+
+export const getCurrentUser = async () => {
     try {
-        await account.deleteSessions();
-        return true;
+        
     } catch (error) {
-        console.error("Sign out error:", error);
-        throw error;
+        console.log(error)
     }
 }
+
+// Add logout functionality
+// export async function signOut() {
+//     try {
+//         await account.deleteSessions();
+//         return true;
+//     } catch (error) {
+//         console.error("Sign out error:", error);
+//         throw error;
+//     }
+// }
